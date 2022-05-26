@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@500 & display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  background: rgb(230, 230, 230);
+}
+.h1 {
+  color: #1a237e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 64px;
+  background-color: #3d5afe;
+  position: relative;
+  z-index: 1;
+}
+nav h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fafafa;
+  text-transform: uppercase;
+}
+nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url(/image/icons8-chercher-32.png);
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+}
+.hide {
+  opacity: 0.3;
+  margin-top: -64px;
+}
+
+.search {
+  height: 64px;
+  width: 100%;
+  background-color: #3d5afe;
+  position: relative;
+  z-index: 0;
+  transition: 0.4s;
+}
+.search input {
+  width: calc(100% - 180px);
+  padding: 10px 15px;
+  margin-right: 15px;
+  font-size: 1.3rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fafafa;
+  color: #fafafa;
+}
+.search button {
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #fafafa;
+  color: #fafafa;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+.search input::placeholder {
+  color: #b2b2b2;
+}
+.search button:hover {
+  background-color: #fafafa;
+  color: #212121;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.tableau-style {
+  border-collapse: collapse;
+  min-width: 350px;
+  width: auto;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+  margin: 100px auto;
+  /* border: 2px solid mediumblue; */
+  border: 1.1px solid rgba(88, 88, 88, 0.15);
+  font-family: "Poppins", sans-serif;
+}
+
+thead tr {
+  background-color: mediumblue;
+  color: #fff;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px 20px;
+}
+
+tbody tr,
+td,
+th {
+  border: 1px solid rgba(197, 197, 197, 0.767);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #c5c5c511;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid midnightblue;
+}
+
+.text1, .text2 {
+  color: #1a248a;
+  font-size: 17;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#discord {
+  color: #fafafa;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#discord::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  margin: 0 auto;
+  background: #fafafa;
+  transition: width 0.4s ease-in-out;
+}
+#discord:hover::after {
+  width: 100%;
+}
+
+.Logo {
+  height: 50%;
+  position: absolute;
+  top: 26%;
+  left: -7%;
+}
+
+#LogoDiscord {
+  height: 45%;
+  position: absolute;
+  top: 27%;
+  left: 12%;
+}
