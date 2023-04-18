@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="/image/discord-new-logo.png">
+    <link rel="stylesheet" href="Discord.css">
+    <title>Discord</title>
+</head>
+<body>
+    <header>
+        <section>
+                <nav>
+                    <div class="container">
+                        <a href="/index.html"><h1>TIE</h1></a>
+                        <img src="/image/Logo-TIE.png" class="Logo" alt="">
+                        <a href="https://discord.gg/YEmHRCU3fu" target="_blank" id="discord"><h3>Discord</h3></a>
+                        <img src="/image/Discord-Embleme.png" alt="" id="LogoDiscord">
+                        <button onclick="slide()"></button>
+                    </nav>
+                </nav>
+            <div class="search hide">
+                <div class="container">
+                    <input type="text" placeholder="Recherche" id="search" onchange="ouvrirPage()"><button onclick="ouvrirPage()" id="boutton">Rechercher</button>
+                </div>
+            </div>
+    </header>
+    <iframe id="widget" src="https://discord.com/widget?id=876445336095322152&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    
+    <script src="/index/search.js"></script>
+</body>
+</html>

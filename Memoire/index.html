@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page -->
+    <title>Agence TIE</title>
+    <!-- image du site -->
+    <link rel="shortcut icon" href=".//image/Logo-TIE.png">
+    <!-- liaison des langages -->
+    <link rel="stylesheet" href=".//index/style.css">
+</head>
+
+<body>
+    <header>
+        <section>
+                <nav>
+                    <div class="container">
+                        <h1>TIE</h1>
+                        <img src=".//image/Logo-TIE.png" class="Logo" alt="">
+                        <a href=".//Discord/Discord.html" target="_blank" id="discord"><h3>Discord</h3></a>
+                        <img src=".//image/Discord-Embleme.png" alt="" id="LogoDiscord">
+                        <button onclick="slide()"></button>
+                    </nav>
+                <div class="search hide">
+                    <div class="container">
+                        <input type="text" placeholder="Recherche" id="search" onchange="ouvrirPage()"><button onclick="ouvrirPage()" id="boutton">Rechercher</button>
+                    </div>
+                </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <h1 class="h1">Bonjour !</h1>
+            <p class="text2"><strong>Information:</strong></p>
+            <br>
+            <p class="text1">Voici les prix en moyenne des composant de&nbsp;<strong>PC</strong>&nbsp;(Personal Computer).</p>
+        </div>
+    </div>
+
+    <table class="tableau-style">
+
+        <thead>
+            <tr>
+                <th>Composant</th>
+                <th>Prix</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>CPU</td>
+                <td>150-300€</td>
+            </tr>
+            <tr>
+                <td>Carte Mère</td>
+                <td>90-100€</td>
+            </tr>
+            <tr>
+                <td>Disque Local</td>
+                <td>80-130€</td>
+                <tr>
+                    <td>Carte Grafique</td>
+                    <td>100-300€</td>
+                </tr>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <script src=".//index/search.js"></script>
+</body>
+
+</html>
